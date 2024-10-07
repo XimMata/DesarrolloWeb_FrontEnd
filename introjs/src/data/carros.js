@@ -51,7 +51,7 @@ const carroPorNombre=(nombreCliente)=>{
 }
 
 const carroPorID=(id)=>{
-    return carros.filter(i=>i.id==id);
+    return carros.find(i=>i.id===id);
 }
 
 export{
