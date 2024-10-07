@@ -50,7 +50,12 @@ const carroPorNombre=(nombreCliente)=>{
     return carros.find(i=>i.cliente.name===nombreCliente);
 }
 
+const carroPorID=(id)=>{
+    return carros.filter(i=>i.id==id);
+}
+
 export{
     carros,
-    carroPorNombre as default
+    carroPorNombre as default,
+    carroPorID
 }
